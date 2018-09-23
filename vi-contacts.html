@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Cong ty SISU Vina">
+  <meta name="keywords" content="Lorem ipsum">
+  <meta name="author" content="SISU Vina">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>SISU Vina</title>
+  <link rel="stylesheet" type="text/css" href="static/style-web.css">  <link rel="stylesheet" type="text/css" href="static/style-intro.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target="navbar" data-offset="100">
+<div id ="wrapper">
+  <div class = "container text-center">
+    <div class="navbar-header"><a href = "vi-web.html"><img src = "static/Images/sisu_logo(final).png" width = 260.125 height = 75.375></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-left">
+          <li class="dropdown"><a href="vi-intro.html">Giới thiệu &nbsp<i class = "fa fa-angle-down"></i></a>
+          <div class = "dropdown-content">
+            <h4><a href="vi-intro.html">Tổng quan</a><h4>
+            <h4><a href="vi-organization.html">Sơ đồ tổ chức</a></h4>
+            <h4><a href="vi-mission.html">Tầm nhìn & Sứ mệnh</a></h4>
+            <h4><a href="vi-clients.html">Đối tác & Khách hàng</a></h4>
+          </div>
+          </li>
+          <li class="dropdown"><a href="vi-products.html">Sản phẩm &nbsp<i class = "fa fa-angle-down"></i></a>
+          <div class = "dropdown-content">
+            <h4><a href="vi-atm.html">Dịch vụ ATM</a><h4>
+            <h4><a href="vi-accsoft.html">Phần mềm kế toán</a></h4>
+          </div>
+          </li>
+          <li class="dropdown"><a href="vi-recruitment.html">Tuyển dụng &nbsp<i class = "fa fa-angle-down"></i></a>
+          <div class = "dropdown-content">
+            <h4><a href="vi-recruitment.html">Cơ hội tại SISU</a><h4>
+            <h4><a href="#">Quy trình tuyển dụng</a></h4>
+          </div></li>
+          <li class = "contact"><a href="vi-contacts.html">Liên hệ  &nbsp<i class = "fa fa-angle-down"></i></a>
+          </li>
+        </ul>
+        <input type="text" name="search" placeholder="Tìm kiếm" class = "searchbar">
+      <a href = "#"><div class = "lang text-center">&nbsp English</div></a>
+      </div>
+    </div>
+
+
+
+<div class = "container-fluid" style = "background-color: #f2f2f2; padding-bottom: 70px; margin-bottom: -20px">
+  <div class = "row">
+  <div class="col-md-3">
+    <div class="vertical-menu">
+      <h2>Liên hệ</h2>
+      <a href="vi-contacts.html" class = "active">Bản đồ & thông tin liên lạc</a>
+    </div>
+  </div>
+  <ul class="breadcrumb">
+    <li><a href="vi-web.html">Trang chủ</a></li>
+    <li><a href="vi-contacts.html">Liên hệ</a></li>
+    <li><a href="vi-contacts.html" class="active">Bản đồ & thông tin liên lạc</a></li>
+  </ul>
+
+  <div class = "col-md-9 col-format">
+    <h2>Bản đồ & thông tin liên lạc</h2>
+      <div id="googleMap" style="width:100%;height:350px;margin-top:10px; margin-bottom: 30px; margin-left:0px;overflow: hidden"></div>
+    <script>
+    function myMap() {
+      var address = {lat: 21.013516, lng: 105.791093};
+      var map = new google.maps.Map(document.getElementById('googleMap'), {
+          zoom: 18,
+          center: address
+      });
+      var marker = new google.maps.Marker({
+          position: address,
+          map: map
+      });
+      var infowindow = new google.maps.InfoWindow({content:'<img src = "static/Images/sisu_logo(final).png" class = "img-responsive" width = 195.09375 height = 56.53125 style = "margin: auto;"><br><h4 style = "font-size: 16px;margin-top: 0px"><strong>Địa chỉ: </strong>Nhà B10A - Khu đô thị Nam Trung Yên, <br>đường Nguyễn Chánh, phường Trung Hoà, <br>quận Cầu Giấy, thành phố Hà Nội, Việt Nam.</h4><h4 style = "font-size: 16px;margin-top: 0px"><strong>Điện thoại: </strong>04.62820834 – 04.62820835</h4>'
+      });
+
+      marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvKI8JkDO1JrCEwD3kYXsOlX1WbCkxiv4&callback=myMap"></script>
+    <h3>Công ty THNN SISU VINA</h3>
+    <p><strong>Địa chỉ: </strong>Nhà B10A - Khu đô thị Nam Trung Yên, đường Nguyễn Chánh, phường Trung Hoà, quận Cầu Giấy, thành phố Hà Nội, Việt Nam.
+    <br><strong>Điện thoại: </strong>04.62820834 – 04.62820835 &nbsp &nbsp &nbsp <strong>Fax: </strong>04.38251733
+    <br><strong>Email: </strong>pdkkd_sokhdt@hanoi.gov.vn
+    <br><strong>Website: </strong>www.hapi.gov.vn
+    </p>
+  </div>
+
+  </div>
+  </div>
+  </div>
+
+
+<div class = "container" style ="width:100%">
+  <div class = "row">
+    <div class = "col-md-12">
+    <div class = "col-md-4">
+      <h4>Giới thiệu</h4>
+      <h5><a href ="vi-intro.html">Tổng quan</a></h5>
+      <h5><a href ="vi-organization.html">Sơ đồ tổ chức</a></h5>
+      <h5><a href ="vi-mission.html">Tầm nhìn & Sứ mệnh</a></h5>
+      <h5><a href ="vi-clients.html">Đối tác & Khách hàng</a></h5>
+    </div>
+    <div class = "col-md-4">
+      <h4>Sản phẩm</h4>
+      <h5><a href ="vi-atm.html">Dịch vụ ATM</a></h5>
+      <h5><a href ="vi-accsoft.html">Phần mềm kế toán</a></h5>
+    </div>
+    <div class = "col-md-4">
+      <h4>Tuyển dụng</h4>
+      <h5><a href ="vi-recruitment.html">Cơ hội tại SISU</a></h5>
+      <h5><a href ="#">Quy trình tuyển dụng</a></h5>
+    </div>
+    <img class = "bottom-img" src = "static/Images/sisu_logo(final).png" width = 260.125 height = 75.375>
+    <div class = "bottom-text">
+      <h5>Nhà B10A - Khu đô thị Nam Trung Yên, đường Nguyễn Chánh,<br>phường Trung Hoà, quận Cầu Giấy, thành phố Hà Nội, Việt Nam.</h5>
+      <h5><span>Điện thoại:</span> 04.62820834 - 04.62820835 &nbsp &nbsp &nbsp <span>Fax:</span> 04.38251733</h5>
+      <h5>Copyright @SISU VINA 2017. All rights reserved.</h5>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
